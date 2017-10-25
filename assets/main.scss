@@ -1,0 +1,24 @@
+---
+# Only the main Sass file needs front matter (the dashes are enough)
+---
+
+div.fixedratio {
+  position: relative;
+  left: calc( 50% - 400px );
+  width: 800px;
+}
+
+div.bgimage {
+    max-width: 800px;
+    background-image: url(img/bgimage.jpg);
+    background-repeat: no-repeat;
+    background-position-x: center;
+    background-position-y: top;
+    background-size: 800px;
+    background-attachment: fixed;
+    width: 800px;
+    // display: block;
+    height: 300px;
+}
+
+@import "minima";
