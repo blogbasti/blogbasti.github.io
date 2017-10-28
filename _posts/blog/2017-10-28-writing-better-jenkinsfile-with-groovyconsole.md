@@ -16,4 +16,4 @@ tags:
 1. Jenkins introduction
 2. show that Jenkinsfiles are a good idea
 3. explain why i have to write groovy code
-4. explain how to develop better Jenkinsfile within groovyConsole
+4. explain how to develop better `Jenkinsfile` within [groovyConsole](http://groovy-lang.org/groovyconsole.html)
