@@ -47,7 +47,7 @@ While trying to write that function, I've stepped into many pitfalls because of 
 I had used a test-project with Jenkins in try-and-error mode
 (*or commit-and-push*) to find a working version.
 
-> explain how to develop better `Jenkinsfile` within [groovyConsole](http://groovy-lang.org/groovyconsole.html)
+> [groovyConsole](http://groovy-lang.org/groovyconsole.html) can help to write better Jenkinsfile
 
 Last Thursday evening, after some time of try-and-error-loops, I had the idea to use a GroovyIDE to write my function to get a faster feedback and to learn language pattern much faster.
 The easiest and simplest IDE for Groovy seems to be [groovyConsole](http://groovy-lang.org/groovyconsole.html) which is part of Groovy package. With some additional function definitions, which are part of Jenkins Pipeline API like
