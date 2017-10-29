@@ -3,7 +3,6 @@ layout: blog
 title: Writing better Jenkinsfiles with GroovyConsole
 date: 2017-10-28T19:57:20.837Z
 thumbnail: /assets/img/uploads/jenkins-heart-of-ci-cd.png
-rating: '1'
 categories:
   - continuous integration
   - groovy
@@ -12,6 +11,7 @@ tags:
   - Jenkins
   - Groovy
   - Chef
+comments: true
 ---
 > managing Jenkins Jobs was a hard task
 
