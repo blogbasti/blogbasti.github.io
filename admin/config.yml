@@ -14,10 +14,10 @@ collections:
       - {label: "Title", name: "title", widget: "string"}
       - {label: "Publish Date", name: "date", widget: "datetime"}
       - {label: "Featured Image", name: "thumbnail", widget: "image"}
-      - {label: "Rating (scale of 1-5)", name: "rating", widget: "number"}
       - {label: "Body", name: "body", widget: "markdown"}
       - {label: Categories, name: categories, widget: list}
       - {label: Tags, name: tags, widget: list, default: ['IT']}
+      - {label: Comments, name: comments, widget: boolean}
   - name: "posts"
     label: "Post"
     folder: "_posts"
