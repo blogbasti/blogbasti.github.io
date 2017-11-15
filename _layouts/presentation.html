@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html class="{% if site.solarized.theme %}{{site.solarized.theme}}{% else %}dark{% endif %}">
+{% include head.html %}
+<body>
+	<div class="reveal">
+		<div class="slides">
+      {% assign slides = "" | split: "" %}
+      {% assign slides = slides | push: page %}
+      {% for post in slides reversed %}
+        {% include slide.html %}
+      	<div class="page-break"></div>
+      {% endfor %}
+		</div>
+	</div>
+	{% include script.html %}
+</body>
+</html>
