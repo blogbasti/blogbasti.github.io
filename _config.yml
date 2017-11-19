@@ -39,6 +39,29 @@ disqus:
 # header_pages:
 # - about.html
 
+collections:
+  slides:
+    output: true
+    permalink: /:collection/:year/:month/:day/:title.html
+    relative_directory: _slides
+  slide_comments:
+    output: true
+    permalink: /:collection/:year/:month/:day/:title.html
+    relative_directory: _slide_comments
+
+defaults:
+  - scope:
+      path: ""
+      type: slides
+    values:
+      layout: presentation
+  - scope:
+      path: ""
+      type: slide_comments
+    values:
+      layout: slide_comments
+
+
 # Build settings
 markdown: kramdown
 theme: minima

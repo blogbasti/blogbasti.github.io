@@ -1,0 +1,50 @@
+---
+layout: default
+---
+
+<div class="home">
+
+  {{ content }}
+
+  <h1 class="page-heading">Slides</h1>
+
+  <ul class="post-list">
+    {% for post in site.slides %}
+      <li>
+        {% assign date_format = site.minima.date_format | default: "%b %-d, %Y" %}
+        <span class="post-meta">{{ post.date | date: date_format }}</span>
+
+        <h2>
+          {% if post.index_title -%}
+          {% assign p_title = post.index_title -%}
+          {% else -%}
+          {% assign p_title = post.title -%}
+          {% endif -%}
+          <a class="post-link" href="{{ post.url | relative_url }}">{{ p_title | escape }}</a>
+        </h2>
+
+        {% if post.thumbnail %}
+        <a class="post-link" href="{{ post.url | relative_url }}">
+        <img class="post-thumbnail" src="{{ post.thumbnail | relative_url }}" />
+        </a>
+        {% endif %}
+
+        {% if post.layout == "presentation" %}
+        <a class="post-link" href="{{ post.url | relative_url }}">
+        <div class="aspect-ratio">
+        <iframe class="post-thumbnail" src="{{ post.url | relative_url }}" allowfullscreen></iframe>
+        </div>
+        </a>
+        {% endif %}
+        <div class="post-comment-link">
+        You will find the
+        <a class="post-comment-link" href="{{ post.url | replace_first: "/slides/", "/slide_comments/" | relative_url }}">script and comments here</a>.
+        </div>
+      </li>
+    {% endfor %}
+  </ul>
+{% comment %}
+  <p class="rss-subscribe">subscribe <a href="{{ "/feed.xml" | relative_url }}">via RSS</a></p>
+{% endcomment %}
+
+</div>
