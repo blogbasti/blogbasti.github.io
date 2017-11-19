@@ -31,8 +31,7 @@ layout: default
         {% if post.layout == "presentation" %}
         <a class="post-link" href="{{ post.url | relative_url }}">
         <div class="aspect-ratio">
-        <iframe class="post-thumbnail" src="{{ post.url | relative_url }}">
-        </iframe>
+        <iframe class="post-thumbnail" src="{{ post.url | relative_url }}" allowfullscreen></iframe>
         </div>
         </a>
         {% endif %}
