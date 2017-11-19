@@ -55,11 +55,14 @@ defaults:
       type: slides
     values:
       layout: presentation
+      title: ''
   - scope:
       path: ""
       type: slide_comments
     values:
       layout: slide_comments
+      title: ''
+      comments: true
 
 
 # Build settings
