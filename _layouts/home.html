@@ -15,8 +15,27 @@ layout: default
         <span class="post-meta">{{ post.date | date: date_format }}</span>
 
         <h2>
+          {% if post.index_title %}
+          <a class="post-link" href="{{ post.url | relative_url }}">{{ post.index_title | escape }}</a>
+          {% else %}
           <a class="post-link" href="{{ post.url | relative_url }}">{{ post.title | escape }}</a>
+          {% endif %}
         </h2>
+
+        {% if post.thumbnail %}
+        <a class="post-link" href="{{ post.url | relative_url }}">
+        <img class="post-thumbnail" src="{{ post.thumbnail | relative_url }}" />
+        </a>
+        {% endif %}
+
+        {% if post.layout == "presentation" %}
+        <a class="post-link" href="{{ post.url | relative_url }}">
+        <div class="aspect-ratio">
+        <iframe class="post-thumbnail" src="{{ post.url | relative_url }}">
+        </iframe>
+        </div>
+        </a>
+        {% endif %}
       </li>
     {% endfor %}
   </ul>
