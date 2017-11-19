@@ -42,7 +42,7 @@
 {% if jekyll.environment == 'production' and site.google_analytics %}
   {% include google-analytics.html %}
 {% endif %}
-{% unless page.layout == "slide" %}
+{% unless is_reveal %}
   <script src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
 {% endunless %}
 </head>
