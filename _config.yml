@@ -119,9 +119,9 @@ reveal:
   ## Number of slides away from the current that are visible
   #viewDistance: 3
   ## Parallax background image (e.g. "'https://s3.amazonaws.com/hakim-static/reveal-js/reveal-parallax-1.jpg'")
-  parallaxBackgroundImage: '/assets/img/bgimage.jpg'
+  # parallaxBackgroundImage: '/assets/img/bgimage.jpg'
   ## Parallax background size (CSS syntax, e.g. "2100px 900px")
-  parallaxBackgroundSize: '1496px 508px'
+  # parallaxBackgroundSize: '1496px 508px'
   ## The "normal" size of the presentation, aspect ratio will be preserved
   ## when the presentation is scaled to fit different resolutions. Can be
   ## specified using percentage units.
