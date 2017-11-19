@@ -1,6 +1,7 @@
 ---
 layout: presentation
-title: this is a test
+title: ''
+index_title: This is a test
 date: 2017-10-28T19:57:20.837Z
 ---
 
